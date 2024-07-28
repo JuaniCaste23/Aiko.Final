@@ -1,0 +1,68 @@
+:root {
+    /*colors primary*/
+    --dark-blue: hsl(198, 62%, 26%);
+    --netbialet-color-primary: #28377d;
+    --netbialet-color-second: #70c8e9;
+    /*colors neutral*/
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --just-white: #fff;
+    /*typography*/
+    --font-size: 1.0rem; /* 1rem -> 16px */
+    --font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    width: 100%;
+    min-width: 320px;
+}
+
+body {
+    position: relative;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+.main-container { /* ocupa todo el ancho de la pantalla */
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--netbialet-color-primary);
+}
+
+/*MEDIA QUERY */
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 820px) {
+
+}
+
+/*ANIMACIONES */
+
+@keyframes netbialet {
+
+}
