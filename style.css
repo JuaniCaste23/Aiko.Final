@@ -28,6 +28,7 @@ body {
     position: relative;
     font-size: var(--font-size);
     font-family: var(--font-family);
+    background-color: var(--netbialet-color-primary);
 }
 
 li {
@@ -78,6 +79,8 @@ a {
     background-image: url("assets/fonts/fondo-telarania.svg");
     position: fixed;
     border-bottom: 2px solid #000;
+    opacity: 0.9;
+    z-index:100;
 }
 
 .logo-netbialet {
@@ -109,6 +112,7 @@ a {
     height: 600px;
     transition: 200ms;
     margin: 0 auto;
+    /* animation: netbialet 4s infinite; */
 }
 
 .img-container {
@@ -193,7 +197,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 16px 100px;
+    padding: 16px 300px;
     margin: 0 auto;
     align-items: center;
     border-top: 2px solid #000;
@@ -210,6 +214,11 @@ a {
 .footer-container p {
     color: var(--just-white);
     font-size: 18px;
+}
+
+.derechos {
+    font-size: 13px;
+    color: var(--just-white);
 }
 
 .social_networks-container {
@@ -254,7 +263,14 @@ a {
 /*ANIMACIONES */
 
 @keyframes netbialet {
-    netbialet {
-        
+   
+    from{
+        filter: saturate(180%);
     }
+
+    to{
+        filter: saturate(0%);
+    }
+
+
 }
