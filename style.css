@@ -40,6 +40,26 @@ a {
     transition: all 200ms ease-in-out;
 }
 
+.boton-wsp {
+    position:fixed;
+    top:120px;
+    right:25px;
+    border-radius: 100%;
+    border: 2px solid var(--netbialet-color-secondary);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease-in-out;
+    text-align: center;
+    background-color: #20ba5a;
+}
+
+.boton-wsp img {
+    width: 90%;
+}
+.boton-wsp:hover{
+    background-color: var(--just-white);
+}
+
 .main-container { /* ocupa todo el ancho de la pantalla */
     width: 100vw;
     height: 100%;
@@ -206,11 +226,11 @@ a {
 }
 
 .social_networks-container li svg {
-    width: 70px;
+    width: 60px;
     border-radius: 100%;
     border: 1px solid var(--netbialet-color-secondary);
-    transition: 300ms ease-out;
-    padding: 8px;
+    transition: 300ms ease-in-out;
+    padding: 10px;
 }
 
 .social_networks-container li svg:hover {
