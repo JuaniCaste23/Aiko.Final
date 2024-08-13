@@ -1,14 +1,14 @@
 :root {
     /*colors primary*/
-    --dark-blue: hsl(198, 62%, 26%);
+    --dark-blue: hsl(198, 77%, 17%);
     --netbialet-color-primary: #28377d;
-    --netbialet-color-second: #70c8e9;
+    --netbialet-color-secondary: #70c8e9;
     /*colors neutral*/
     --dark-grayish-blue: hsl(232, 10%, 55%);
     --grayish-blue: hsl(210, 4%, 67%);
     --just-white: #fff;
     /*typography*/
-    --font-size: 1.0rem; /* 1rem -> 16px */
+    --font-size: 16px;
     --font-family: 'Open Sans', sans-serif;
 }
 
@@ -33,23 +33,182 @@ body {
     font-family: var(--font-family);
 }
 
+li {
+    list-style: none;
+}
+
 .main-container { /* ocupa todo el ancho de la pantalla */
     width: 100vw;
     height: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .header-container {
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 16px 100px;
     align-items: center;
     background-color: var(--netbialet-color-primary);
+    background-image: url("assets/fonts/fondo-telarania.svg");
+    position: fixed;
+    border-bottom: 2px solid #000;
 }
+
+.header-container img {
+    width: 180px;
+}
+
+.nav-container ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container ul a {
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+    letter-spacing: 0.9px;
+}
+
+.nav-container ul a:hover {
+    font-weight: bold;
+}
+
+.hero-container {
+    width: auto;
+    height: 600px;
+    transition: 200ms;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.img-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    background-color: var(--netbialet-color-primary);
+    padding: 20px;
+}
+
+.article-container__img-container {
+    height: 100%;
+    width:50%;
+    overflow: hidden;
+}
+
+.article-container__img-container img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.article-container_text-box {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height:440px;
+    width:50%;
+    text-align:center;
+    padding:20px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.article-container__text-box h2 {
+    color:var(--very-dark-desatured-blue);
+    font-family: var(--font-fraunces);
+    margin:25px;
+}
+
+.article-container__text-box p {
+    color: var(--dark-grayish-blue);
+    font-family: var(--font-barlow);
+    line-height: 1.8rem;
+    margin-bottom:25px;   
+}
+
+.clients-container {
+    text-align: center;
+    height: 500px;
+    background-color: var(--netbialet-color-secondary);
+    padding: 30px;
+}
+
+.clients-container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 100px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--netbialet-color-primary);
+    background-image: url("assets/fonts/fondo-telarania.svg");
+    border-top: 2px solid #000;
+}
+
+.footer-container span {
+    color: var(--just-white);
+}
+
+.social_networks-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    list-style-type: none;
+}
+
+.social_networks-container li{
+    margin: 0px 15px;
+}
+
+.social_networks-container li a svg{
+    padding: 20px;
+}
+
+.social_networks-container li svg path {
+    fill: var(--netbialet-color-secondary);
+    transition: 400ms ease-out;
+}
+
+.social_networks-container li:hover svg path {
+    fill: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*MEDIA QUERY */
 
@@ -64,5 +223,7 @@ body {
 /*ANIMACIONES */
 
 @keyframes netbialet {
-
+    netbialet {
+        
+    }
 }
