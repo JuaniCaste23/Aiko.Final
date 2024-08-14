@@ -52,8 +52,9 @@
 
 /*Funcion externa*/
 //funcion que permite un scroll suavizado entre secciones
-const links = document.querySelectorAll('a[href^="#"]');
 
+const links = document.querySelectorAll('a[href^="#"]');
+console.log(links);
     links.forEach((link) => {
 
         link.addEventListener('click', (e) => {

@@ -41,6 +41,14 @@ a {
     transition: all 200ms ease-in-out;
 }
 
+h3 {
+    border-bottom: 1px solid var(--netbialet-color-secondary);
+    color: var(--just-white);
+    text-shadow: 3px 3px 10px black;
+    font-size: 20px;
+    text-align: center;
+}
+
 .boton-wsp {
     position:fixed;
     top:120px;
@@ -94,7 +102,7 @@ a {
 
 .nav-container ul a {
     color: var(--just-white);
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0.9px;
 }
 
@@ -142,6 +150,7 @@ a {
     height: 100%;
     width:50%;
     overflow: hidden;
+    border-left: 2px solid #000;
 }
 
 .article-container__img-container img {
@@ -156,7 +165,7 @@ a {
     align-items:center;
     justify-content: center;
     height:440px;
-    width:50%;
+    width:100%;
     text-align:center;
     padding:20px;
     margin: auto;
@@ -166,11 +175,13 @@ a {
 .article-container__text-box h2 {
     color: var(--just-white);
     margin:25px;
+    font-size: 24px;
 }
 
 .article-container__text-box p {
     color: var(--just-white);
     margin-bottom:25px;   
+    font-size: 24px;
 }
 
 #nosotros, #contenedor {
@@ -180,9 +191,9 @@ a {
 
 .clients-container {
     text-align: center;
-    height: 500px;
+    height: 600px;
     background-color: var(--dark-blue);
-    background-image: url("assets/fonts/fondo-telarania.svg");
+    background-image: url(assets/fonts/fondo-telarania-alrevez.svg);
     padding: 30px;
 }
 
@@ -193,15 +204,15 @@ a {
 }
 
 .footer-container {
-    height: 300px;
+    height: 350px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 16px 300px;
+    padding: 16px 100px;
     margin: 0 auto;
     align-items: center;
-    border-top: 2px solid #000;
     background-color: var(--netbialet-color-primary);
+    border-top: 4px solid black;
 }
 
 .footer-container__text-box {
@@ -213,41 +224,48 @@ a {
 
 .footer-container p {
     color: var(--just-white);
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px black;
+    letter-spacing: 1.2px; 
+    text-align: center;
 }
 
 .derechos {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--just-white);
+    text-shadow: 3px 3px 10px black;
+    font-weight: bold;
 }
 
 .social_networks-container {
     display: flex;
     justify-content: center;
     align-items:center;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
 }
 
 .social_networks-container li svg path {
-    fill: var(--netbialet-color-secondary);
+    fill: var(--just-white);
     transition: 300ms ease-out;
 }
 
 .social_networks-container li svg {
     width: 60px;
     border-radius: 100%;
-    border: 1px solid var(--netbialet-color-secondary);
+    border: 3px solid var(--just-white);
     transition: 300ms ease-in-out;
     padding: 10px;
+    background-color: var(--netbialet-color-primary);
 }
 
 .social_networks-container li svg:hover {
-    border: 1px solid var(--just-white);
+    border: 3px solid var(--netbialet-color-secondary);
 }
 
 .social_networks-container li:hover svg path {
-    fill: var(--just-white);
+    fill: var(--netbialet-color-secondary);
 }
 
 /*MEDIA QUERY */
