@@ -138,12 +138,12 @@ h3 {
 
 .article-container {
     display: flex;
-    width: 100%;
+    width: auto;
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
     background-color: var(--netbialet-color-primary);
-    padding: 20px;
 }
 
 .article-container__img-container {
@@ -156,6 +156,7 @@ h3 {
 .article-container__img-container img {
     height:100%;
     width:100%;
+    max-width: 500px;
     object-fit: cover;
 }
 
@@ -166,6 +167,7 @@ h3 {
     justify-content: center;
     height:440px;
     width:100%;
+    max-width: 500px;
     text-align:center;
     padding:20px;
     margin: auto;
@@ -182,6 +184,7 @@ h3 {
     color: var(--just-white);
     margin-bottom:25px;   
     font-size: 24px;
+    max-width: 200;
 }
 
 #nosotros, #contenedor {
