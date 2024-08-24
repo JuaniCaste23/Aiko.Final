@@ -117,7 +117,7 @@ h3 {
 
 .hero-container {
     width: auto;
-    height: 600px;
+    height: 800px;
     transition: 200ms;
     margin: 0 auto;
     /* animation: netbialet 4s infinite; */
@@ -156,36 +156,14 @@ h3 {
 .article-container__img-container img {
     height:100%;
     width:100%;
-    max-width: 500px;
     object-fit: cover;
 }
 
 .article-container_text-box {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
-    height:440px;
-    width:100%;
-    max-width: 500px;
-    text-align:center;
-    padding:20px;
-    margin: auto;
-    font-size: 16px;
+
 }
 
-.article-container__text-box h2 {
-    color: var(--just-white);
-    margin:25px;
-    font-size: 24px;
-}
 
-.article-container__text-box p {
-    color: var(--just-white);
-    margin-bottom:25px;   
-    font-size: 24px;
-    max-width: 200;
-}
 
 #nosotros, #contenedor {
     flex-direction: row-reverse;
