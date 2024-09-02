@@ -139,6 +139,7 @@ h3 {
 .article-container {
     display: flex;
     width: auto;
+    height: 400px;
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid #000;
@@ -150,7 +151,6 @@ h3 {
     height: 100%;
     width:50%;
     overflow: hidden;
-    border-left: 2px solid #000;
 }
 
 .article-container__img-container img {
@@ -173,7 +173,6 @@ h3 {
 .clients-container {
     text-align: center;
     height: 600px;
-    background-color: var(--dark-blue);
     background-image: url(assets/fonts/fondo-telarania-alrevez.svg);
     padding: 30px;
 }
@@ -181,7 +180,7 @@ h3 {
 .clients-container iframe{
     width: 70%;
     height: 100%;
-    border: 10px solid #000;
+    border: 2px solid var(--netbialet-color-secondary);
 }
 
 .footer-container {
